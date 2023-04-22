@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragment.WalletFragment">
+
+    <ImageView
+        android:id="@+id/ivHeader"
+        android:layout_width="match_parent"
+        android:layout_height="192dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/wallet_header"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/fragmentHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:fontFamily="@font/manrope_bold"
+        android:text="@string/your_wallet"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivBack"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="25dp"
+        android:padding="5dp"
+        android:src="@drawable/ic_back"
+        app:layout_constraintBottom_toBottomOf="@id/fragmentHeader"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/fragmentHeader"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/ivEdit"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="25dp"
+        android:padding="5dp"
+        android:src="@drawable/ic_edit"
+        app:layout_constraintBottom_toBottomOf="@id/fragmentHeader"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/fragmentHeader"
+        tools:ignore="ContentDescription" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/ivUserProfile"
+        android:layout_width="147dp"
+        android:layout_height="147dp"
+        android:padding="3dp"
+        android:src="@drawable/user_logo"
+        app:layout_constraintBottom_toBottomOf="@id/ivHeader"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ivHeader"
+        app:shapeAppearance="@style/circleImageView"
+        app:strokeColor="#ffffff"
+        app:strokeWidth="2dp" />
+
+
+    <TextView
+        android:id="@+id/tvPersonalInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="25dp"
+        android:alpha="0.5"
+        android:fontFamily="@font/manrope_medium"
+        android:text="@string/personal_info"
+        android:textColor="@color/black"
+        android:textSize="13sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ivUserProfile" />
+
+    <TextView
+        android:id="@+id/tvNameHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:fontFamily="@font/manrope_medium"
+        android:text="@string/name"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@id/tvPersonalInfo"
+        app:layout_constraintTop_toBottomOf="@id/tvPersonalInfo" />
+
+    <TextView
+        android:id="@+id/tvNameValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="25dp"
+        android:fontFamily="@font/manrope_bold"
+        android:text="@string/vadim_demenko"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@id/tvNameHeader"
+        app:layout_constraintTop_toBottomOf="@id/tvPersonalInfo" />
+
+    <TextView
+        android:id="@+id/tvEmailHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:fontFamily="@font/manrope_medium"
+        android:text="@string/e_mail"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@id/tvPersonalInfo"
+        app:layout_constraintTop_toBottomOf="@id/tvNameHeader" />
+
+    <TextView
+        android:id="@+id/tvEmailValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="18dp"
+        android:fontFamily="@font/manrope_bold"
+        android:text="@string/vadikforz_gmail_com"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@id/tvNameHeader"
+        app:layout_constraintTop_toBottomOf="@id/tvNameHeader" />
+
+
+    <TextView
+        android:id="@+id/tvPhoneHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:fontFamily="@font/manrope_medium"
+        android:text="@string/phone"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@id/tvPersonalInfo"
+        app:layout_constraintTop_toBottomOf="@id/tvEmailHeader" />
+
+    <TextView
+        android:id="@+id/tvPhoneValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="18dp"
+        android:fontFamily="@font/manrope_bold"
+        android:text="@string/_4_1782_049_294"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@id/tvNameHeader"
+        app:layout_constraintTop_toBottomOf="@id/tvEmailHeader" />
+
+    <TextView
+        android:id="@+id/tvMyBankingCards"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="54dp"
+        android:alpha="0.5"
+        android:fontFamily="@font/manrope_medium"
+        android:text="@string/my_banking_cards"
+        android:textColor="@color/black"
+        android:textSize="13sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvPhoneHeader" />
+
+    <TextView
+        android:id="@+id/tvAddBankcard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="54dp"
+        android:layout_marginEnd="32dp"
+        android:alpha="0.5"
+        android:drawablePadding="5dp"
+        android:fontFamily="@font/manrope_medium"
+        android:text="@string/add"
+        android:textColor="@color/black"
+        android:textSize="13sp"
+        app:drawableStartCompat="@drawable/ic_add"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvPhoneHeader" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerBankingCards"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="32dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/tvMyBankingCards"
+        tools:listitem="@layout/item_card" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
